@@ -226,6 +226,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -1208611171589114192, guid: 6fbb600000a2e4f4f93c161c52aaa12a, type: 3}
+      propertyPath: balaPrefab
+      value: 
+      objectReference: {fileID: 1576653085}
+    - target: {fileID: 1365318237055223910, guid: 6fbb600000a2e4f4f93c161c52aaa12a, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1640689570763545383, guid: 6fbb600000a2e4f4f93c161c52aaa12a, type: 3}
+      propertyPath: speed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4865391645763137069, guid: 6fbb600000a2e4f4f93c161c52aaa12a, type: 3}
       propertyPath: m_Name
       value: SpawnBala
@@ -675,6 +687,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1576653085 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9047083033690237969, guid: 6fbb600000a2e4f4f93c161c52aaa12a, type: 3}
+  m_PrefabInstance: {fileID: 95361874}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2091815766
 GameObject:
   m_ObjectHideFlags: 0

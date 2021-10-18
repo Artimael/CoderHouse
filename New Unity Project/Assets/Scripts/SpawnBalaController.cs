@@ -11,7 +11,7 @@ public class SpawnBalaController : MonoBehaviour
     void Start()
     {
         spawnBala();
-        InvokeRepeating("spawnBala",2.0f,2.0f);
+        InvokeRepeating("spawnBala",3.0f,3.0f);
     }
 
     // Update is called once per frame
