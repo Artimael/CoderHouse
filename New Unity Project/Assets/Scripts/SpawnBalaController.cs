@@ -6,17 +6,20 @@ public class SpawnBalaController : MonoBehaviour
 {
 
     public GameObject balaPrefab;
-
     // Start is called before the first frame update
     void Start()
     {
-        spawnBala();
         InvokeRepeating("spawnBala",3.0f,3.0f);
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+           balaPrefab.transform.localScale = new Vector3(3f, 3f, 3f);
+           //balaPrefab=Instantiate(balaPrefab, transform.position, Quaternion.identity);
+        }
         
     }
 
