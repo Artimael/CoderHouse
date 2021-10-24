@@ -18,11 +18,9 @@ public class BalaController : MonoBehaviour
         timeBala -= Time.deltaTime;
 
         if(timeBala<=0.0f){
-            Destroy(this.gameObject);
-        }else{
-            moveBala();
+            Destroy(gameObject);
         }
-
+       moveBala();
     }
 
     void moveBala(){

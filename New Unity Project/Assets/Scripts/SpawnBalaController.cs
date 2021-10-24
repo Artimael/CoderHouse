@@ -9,7 +9,8 @@ public class SpawnBalaController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("spawnBala",3.0f,3.0f);
+        balaPrefab.transform.localScale = new Vector3(1f, 1f, 1f);
+        InvokeRepeating("spawnBala",2.0f,1.5f);
     }
 
     // Update is called once per frame
