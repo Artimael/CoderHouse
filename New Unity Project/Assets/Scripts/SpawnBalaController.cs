@@ -6,6 +6,7 @@ public class SpawnBalaController : MonoBehaviour
 {
 
     public GameObject balaPrefab;
+    public float timeBala;
     // Start is called before the first frame update
     void Start()
     {

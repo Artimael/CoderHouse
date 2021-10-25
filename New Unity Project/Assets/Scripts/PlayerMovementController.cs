@@ -15,19 +15,19 @@ public class PlayerMovementController : MonoBehaviour
     void Update()
     {
         if(Input.GetKey(KeyCode.W)){
-            movePlayer(Vector3.right);
-        }
-
-        if(Input.GetKey(KeyCode.S)){
-            movePlayer(Vector3.left);
-        }
-
-        if(Input.GetKey(KeyCode.A)){
             movePlayer(Vector3.forward);
         }
 
-        if(Input.GetKey(KeyCode.D)){
+        if(Input.GetKey(KeyCode.S)){
             movePlayer(Vector3.back);
+        }
+
+        if(Input.GetKey(KeyCode.A)){
+            movePlayer(Vector3.left);
+        }
+
+        if(Input.GetKey(KeyCode.D)){
+            movePlayer(Vector3.right);
         }
     }
 
