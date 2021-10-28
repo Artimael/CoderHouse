@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5235510281737025406}
   - component: {fileID: 7128982060915838424}
   m_Layer: 0
-  m_Name: Bala
+  m_Name: BalaCanon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -110,3 +110,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   timeBala: 10
+  tipoEnemigos: 1
