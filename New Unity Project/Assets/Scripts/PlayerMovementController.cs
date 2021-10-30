@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMovementController : MonoBehaviour
 {
     public float speed;
+    public float cameraAxisX;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,9 +30,19 @@ public class PlayerMovementController : MonoBehaviour
         if(Input.GetKey(KeyCode.D)){
             movePlayer(Vector3.right);
         }
+        RotatePlayer();
     }
 
     void movePlayer(Vector3 direction){
         transform.Translate(speed* Time.deltaTime * direction);
     }
+
+    private void RotatePlayer()
+    {
+        cameraAxisX += Input.GetAxis("Mouse X");
+        Quaternion angulo   = Quaternion.Euler(0, cameraAxisX, 0);
+        transform.localRotation = angulo;
+    }
+
+
 }

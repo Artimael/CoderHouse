@@ -25,31 +25,40 @@ public class BalaController : MonoBehaviour
     //     }
     //    moveBala();
 
-    switch(tipoEnemigos){
+        switch(tipoEnemigos){
 
-        case enumTipoEnemigos.Tipo1:
-            LookAtPlayer();
-            MoveTowards();
-        break;
-        case enumTipoEnemigos.Tipo2:
-            float distanciaEntreBalaJugador = Vector3.Distance(player.transform.position,transform.position);
-            Debug.Log("distanciaEntreBalaJugador: "+distanciaEntreBalaJugador);
-            if(distanciaEntreBalaJugador>=2.0f){
+            case enumTipoEnemigos.Tipo1:
                 LookAtPlayer();
-                MoveTowards();               
-            }else{
-                Debug.Log("no te muevas");
-                MoveTowards();
-            }
-        break;
-        case enumTipoEnemigos.Tipo3:
+                //moveBala(Vector3.forward);
+            break;
+            case enumTipoEnemigos.Tipo2:
+                float distanciaEntreBalaJugador = Vector3.Distance(player.transform.position,transform.position);
+                Debug.Log("distanciaEntreBalaJugador: "+distanciaEntreBalaJugador);
+                if(distanciaEntreBalaJugador<=2.0f){
+                    Debug.Log("no te muevas");
+                }else{
+    
+                    LookAtPlayer();
+                    MoveTowards();   
+                }
+            break;
+            case enumTipoEnemigos.Tipo3:
+                int index= Random.Range(1,2);
+                if(index==1){
+                LookAtPlayer();
+                }else{
+                distanciaEntreBalaJugador = Vector3.Distance(player.transform.position,transform.position);
+                if(distanciaEntreBalaJugador<=2.0f){
+                    Debug.Log("no te muevas");
+                }else{
+    
+                    LookAtPlayer();
+                    MoveTowards();   
+                }
+                }
+            break;        
 
-        break;        
-
-    }
-
-        LookAtPlayer();
-        MoveTowards();
+        }
 
     }
 

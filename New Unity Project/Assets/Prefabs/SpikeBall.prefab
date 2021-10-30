@@ -61,7 +61,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 731989bd370161d4090df7fd17e6a266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 2
   timeBala: 10
   tipoEnemigos: 2
 --- !u!1 &925028999466868730
